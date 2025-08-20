@@ -86,13 +86,13 @@ void leer_consola(t_log* logger)
 
 	// La primera te la dejo de yapa
 	leido = readline("> ");
-	log_info(logger,leido);
+	log_info(logger,"%s",leido);
 	// El resto, las vamos leyendo y logueando hasta recibir un string vacío
 
 	while(strcmp(leido,"")!=0){
 		free(leido);
 		leido = readline("> ");
-		log_info(logger,leido);
+		log_info(logger,"%s",leido);
 		// Loggeamos el valor de config
 	}
 	
